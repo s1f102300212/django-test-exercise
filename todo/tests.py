@@ -38,7 +38,7 @@ class TaskModelTestCase(TestCase):
 
 class TodoViewTestCase(TestCase):
     def test_index_get(self):
-        client = client()
+        client = Client()
         response = client.get('/')
 
         self.assertEqual(response.status_code,200)
